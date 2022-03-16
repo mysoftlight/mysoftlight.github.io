@@ -6,14 +6,16 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>测试文件 - 无昧小站</title>
+  <title>记一次博客搭建经历#标题 - 无昧小站</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
-  
-  <meta name="description" content="标题标题标题标题文字文字
-小红
-">
+  <meta name="keywords" content=", 博客 github hexo">
+  <meta name="description" content="
+仅做备份，简明搭建流程win平台
+
+需要用到的软件
+...">
   <meta name="author" content="无昧">
   <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -154,7 +156,7 @@
       
       
     </div>
-    <div class="center">测试文件</div>
+    <div class="center">记一次博客搭建经历#标题</div>
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
@@ -196,21 +198,84 @@
       <div class="col-xl-6"><article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="https://img2.baidu.com/it/u=2884981882,2083710978&fm=253&fmt=auto&app=138&f=JPEG?w=450&h=300" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
-    <h1 class="head-title">测试文件</h1>
+    <h1 class="head-title">记一次博客搭建经历#标题</h1>
     <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>March 16, 2022</span>
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>March 17, 2022</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>16</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1510</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
         
-        <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h2 id="标题-1"><a href="#标题-1" class="headerlink" title="标题"></a>标题</h2><h3 id="标题-2"><a href="#标题-2" class="headerlink" title="标题"></a>标题</h3><h4 id="标题-3"><a href="#标题-3" class="headerlink" title="标题"></a>标题</h4><p>文字文字</p>
-<p><img    class="lazyload" data-original="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fa4f5d5afe755bb6ca6071f264073b7e2ebee88d7.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1650035819&t=69c5b218ad05e6a24f6fa82b235ea060" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">小红</span></p>
+        <blockquote>
+<p>仅做备份，简明搭建流程<br>win平台</p>
+</blockquote>
+<h2 id="需要用到的软件"><a href="#需要用到的软件" class="headerlink" title="需要用到的软件"></a>需要用到的软件</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/">github</a></li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">hexo博客框架</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/01/30/hexo-theme-zhaoo/">zhaoo主题</a></li>
+<li><a target="_blank" rel="noopener" href="https://git-scm.com/">git</a></li>
+<li><a target="_blank" rel="noopener" href="https://nodejs.org/en/">node.js</a><h2 id="一般流程"><a href="#一般流程" class="headerlink" title="一般流程"></a>一般流程</h2></li>
+</ul>
+<h3 id="github前期准备"><a href="#github前期准备" class="headerlink" title="github前期准备"></a>github前期准备</h3><p>github 注册，注册之后创建以**.github.io**结尾的Repository。</p>
+<pre><code>1. 填 mysoftlight.github.io
+2. 选 Initialize this repository with a README
+3. 点 create
+</code></pre>
+<h3 id="装node-js"><a href="#装node-js" class="headerlink" title="装node.js"></a>装node.js</h3><pre><code>1. 选LTS版本  
+2. 安装 一直点击下一步
+3. 打开cmd 输 node -v  和 npm -v  若都显示版本号则成功
+</code></pre>
+<h3 id="装git"><a href="#装git" class="headerlink" title="装git"></a>装git</h3><pre><code>1.  官网下32/64位程序解压即可
+</code></pre>
+<h3 id="装hexo"><a href="#装hexo" class="headerlink" title="装hexo"></a>装hexo</h3><pre><code>1.  先创建一个名为blog的文件夹，然后 cd 切过去(或者直接在建好的文件夹下面右键选git bash打开)
+2.  输入 npm instsll -g hexo-cli 之后用 hexo -v 验证是否成功
+</code></pre>
+<h3 id="初始化-hexo"><a href="#初始化-hexo" class="headerlink" title="初始化 hexo"></a>初始化 hexo</h3><pre><code>1.  hexo init myblog 文件名自定义 ，如果在自己设的文件夹下可直接使用 hexo init
+2.  cd myblog 切入文件夹 如果在自己设的文件夹下可忽略
+3.  npm install 安装依赖包
+4.  hexo g 生成网页，展示的是自带网页
+5.  hexo s 将生成的页面放在本地服务器
+6.  浏览器输入 localhost:4000/ 就可以看到了
+7.  git bash里按Ctrl+C停止服务器
+</code></pre>
+<h3 id="Helloword-展示"><a href="#Helloword-展示" class="headerlink" title="Helloword 展示"></a>Helloword 展示</h3><pre><code>1.  在博客路径下输入 hexo new &quot;helloword&quot;
+2.  会在.\blog\source_posts路径下生成名为helloword.md的文件。可以随便写点什么然后保存关上。
+3.  在git Bash 输 hexo g 然后输 hexo s
+4.  刷新之前页面，会看到更新后的页面。
+</code></pre>
+<h3 id="远程部署-一"><a href="#远程部署-一" class="headerlink" title="远程部署(一)"></a>远程部署(一)</h3><pre><code>1.  密钥生成(Name和Email是github的用户名和邮箱) 
+- git config --global user.name &quot;Name&quot;
+- git config --global user.email &quot;Email&quot;
+- ssh-keygen -t rsa -C &quot;Email&quot;
+2.以上直接回车即可，保存默认位置密码空着就行。
+3.  复制密钥 
+- clip &lt; ~/.ssh/id_rsa.pub
+</code></pre>
+<h3 id="远程部署-二"><a href="#远程部署-二" class="headerlink" title="远程部署(二)"></a>远程部署(二)</h3><pre><code>1.  github 头像-&gt;Settings-&gt;SSH and GPG kesys -&gt; new SSH key
+2.  名字随意 ，密钥放刚刚粘贴板里的
+3.  测试连接
+-  ssh -T git@github.com
+</code></pre>
+<h3 id="修改blog配置"><a href="#修改blog配置" class="headerlink" title="修改blog配置"></a>修改blog配置</h3><pre><code> deploy:
+    type: git
+    repo: git@github.com:mysoftlight/mysoftlight.github.io.git
+    branch: master
+</code></pre>
+<h3 id="写文章发布文章"><a href="#写文章发布文章" class="headerlink" title="写文章发布文章"></a>写文章发布文章</h3><pre><code>1.  博客根目录 安装扩展
+- npm i hexo-deployer-git
+2.  git Bash下输入(G 生成静态页面 s启动本地服务器 d推送到github)
+- hexo g
+- hexo d 
+3.  输入你的博客地址 https://你的用户名.github.io
+</code></pre>
+<ul>
+<li><a href="https://mysoftlight.github.io/">https://mysoftlight.github.io</a></li>
+</ul>
 
       </section>
       <section class="extra">
@@ -218,7 +283,7 @@
           <ul class="copyright">
   
     <li><strong>本文作者：</strong>无昧</li>
-    <li><strong>本文链接：</strong><a href="https://mysoftlight.github.io/2022/03/16/hello-world/index.html" title="https:&#x2F;&#x2F;mysoftlight.github.io&#x2F;2022&#x2F;03&#x2F;16&#x2F;hello-world&#x2F;index.html">https:&#x2F;&#x2F;mysoftlight.github.io&#x2F;2022&#x2F;03&#x2F;16&#x2F;hello-world&#x2F;index.html</a></li>
+    <li><strong>本文链接：</strong><a href="https://mysoftlight.github.io/2022/03/17/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%BB%8F%E5%8E%86/index.html" title="https:&#x2F;&#x2F;mysoftlight.github.io&#x2F;2022&#x2F;03&#x2F;17&#x2F;%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%BB%8F%E5%8E%86&#x2F;index.html">https:&#x2F;&#x2F;mysoftlight.github.io&#x2F;2022&#x2F;03&#x2F;17&#x2F;%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%BB%8F%E5%8E%86&#x2F;index.html</a></li>
     <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
   
 </ul>
@@ -235,12 +300,12 @@
 </section>
         
         
-  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/" rel="tag">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li></ul> 
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul> 
 
         
   <nav class="nav">
-    <a href="/2022/03/17/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%BB%8F%E5%8E%86/"><i class="iconfont iconleft"></i>记一次博客搭建经历#标题</a>
     <a></a>
+    <a href="/2022/03/16/hello-world/">测试文件<i class="iconfont iconright"></i></a>
   </nav>
 
       </section>
