@@ -13,7 +13,7 @@
 <li><a href="https://git-scm.com/">git</a></li>
 <li><a href="https://nodejs.org/en/">node.js</a></li>
 </ul>
-<h2 id="一般流程"><a href="#一般流程" class="headerlink" title="一般流程"></a>一般流程</h2><h3 id="github账号前期准备"><a href="#github账号前期准备" class="headerlink" title="github账号前期准备"></a>github账号前期准备</h3><p>github 注册，注册之后创建以**.github.io**结尾的Repository。</p>
+<h2 id="一般流程"><a href="#一般流程" class="headerlink" title="一般流程"></a>一般流程</h2><h3 id="github账号前期准备"><a href="#github账号前期准备" class="headerlink" title="github账号前期准备"></a>github账号前期准备</h3><p>github 注册，注册之后创建以<code>.github.io</code>结尾的Repository。</p>
 <ol>
 <li>填 mysoftlight.github.io</li>
 <li>选 Initialize this repository with a README</li>
@@ -56,8 +56,8 @@
 <li>名字随意 ，密钥放刚刚粘贴板里的</li>
 <li>测试连接<br><code> ssh -T git@github.com</code></li>
 </ol>
-<h3 id="blog配置-blog-x2F-config-yml"><a href="#blog配置-blog-x2F-config-yml" class="headerlink" title="blog配置 blog&#x2F;_config.yml"></a>blog配置 blog&#x2F;_config.yml</h3><p>在 #Deployment 补全以下代码：</p>
-<p><code>deploy:</code><br>    <code> type: git</code><br>    <code>repo: git@github.com:mysoftlight/mysoftlight.github.io.git</code><br>   <code> branch: master</code></p>
+<h3 id="blog配置-blog-x2F-config-yml"><a href="#blog配置-blog-x2F-config-yml" class="headerlink" title="blog配置 blog&#x2F;_config.yml"></a>blog配置 blog&#x2F;_config.yml</h3><p>找到#Deployment 并补全以下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">        type: git</span><br><span class="line">        repo: git@github.com:mysoftlight/mysoftlight.github.io.git</span><br><span class="line">        branch: master</span><br></pre></td></tr></table></figure>
 <h3 id="写文章发布文章"><a href="#写文章发布文章" class="headerlink" title="写文章发布文章"></a>写文章发布文章</h3><ol>
 <li>博客根目录 安装扩展<br> <code>npm i hexo-deployer-git</code></li>
 <li>git Bash下输入(G 生成静态页面 s启动本地服务器 d推送到github)<br><code> hexo g</code><br> <code>hexo d</code> </li>
@@ -68,9 +68,9 @@
 </li>
 <li><p>git Bash端输入<br> <code>cd blog</code><br> <code>git clone https://github.com/zhaoo/hexo-theme-zhaoo.git themes/zhaoo</code></p>
 </li>
-<li><p>在blog根目录中的_config.yml文件修改<br>   &#96;theme: zhaoo&#96;&#96;</p>
+<li><p>在blog根目录中的_config.yml文件修改<br>   <code>theme: zhaoo</code></p>
 </li>
-<li><p>git Bash中启动Hexo服务器预览<br>  &#96;hexo clean &amp;&amp; hexo s&#96;&#96;</p>
+<li><p>git Bash中启动Hexo服务器预览<br>  <code>hexo clean &amp;&amp; hexo s</code></p>
 </li>
 </ol>
 <h3 id="修改后的主题展示"><a href="#修改后的主题展示" class="headerlink" title="修改后的主题展示"></a>修改后的主题展示</h3><p> 点击以下链接可查看修改后的博客效果   </p>
