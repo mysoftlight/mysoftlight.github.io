@@ -204,7 +204,7 @@
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>March 17, 2022</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1700</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1688</span>
     </div>
   </div>
 </section>
@@ -265,7 +265,7 @@
 <li>测试连接<br><code> ssh -T git@github.com</code></li>
 </ol>
 <h3 id="blog配置-blog-x2F-config-yml"><a href="#blog配置-blog-x2F-config-yml" class="headerlink" title="blog配置 blog&#x2F;_config.yml"></a>blog配置 blog&#x2F;_config.yml</h3><p>找到#Deployment 并补全以下代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">        type: git</span><br><span class="line">        repo: git@github.com:mysoftlight/mysoftlight.github.io.git</span><br><span class="line">        branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: git@github.com:mysoftlight/mysoftlight.github.io.git</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
 <h3 id="写文章发布文章"><a href="#写文章发布文章" class="headerlink" title="写文章发布文章"></a>写文章发布文章</h3><ol>
 <li>博客根目录 安装扩展<br> <code>npm i hexo-deployer-git</code></li>
 <li>git Bash下输入(G 生成静态页面 s启动本地服务器 d推送到github)<br><code> hexo g</code><br> <code>hexo d</code> </li>
