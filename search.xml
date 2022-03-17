@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试文件</title>
-    <url>/2022/03/16/hello-world/</url>
-    <content><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h2 id="标题-1"><a href="#标题-1" class="headerlink" title="标题"></a>标题</h2><h3 id="标题-2"><a href="#标题-2" class="headerlink" title="标题"></a>标题</h3><h4 id="标题-3"><a href="#标题-3" class="headerlink" title="标题"></a>标题</h4><p>文字文字</p>
-<p><img  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fa4f5d5afe755bb6ca6071f264073b7e2ebee88d7.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1650035819&t=69c5b218ad05e6a24f6fa82b235ea060"  ><span class="image-caption">小红</span></p>
-]]></content>
-      <tags>
-        <tag>测试</tag>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记一次博客搭建经历#标题</title>
-    <url>/2022/03/17/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%BB%8F%E5%8E%86/</url>
+    <title>记一次博客搭建流程</title>
+    <url>/2022/03/17/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<blockquote>
 <p>仅做备份，简明搭建流程<br>win平台</p>
 </blockquote>
@@ -22,62 +11,71 @@
 <li><a href="https://hexo.io/zh-cn/index.html">hexo博客框架</a></li>
 <li><a href="https://www.izhaoo.com/2020/01/30/hexo-theme-zhaoo/">zhaoo主题</a></li>
 <li><a href="https://git-scm.com/">git</a></li>
-<li><a href="https://nodejs.org/en/">node.js</a><h2 id="一般流程"><a href="#一般流程" class="headerlink" title="一般流程"></a>一般流程</h2></li>
+<li><a href="https://nodejs.org/en/">node.js</a></li>
 </ul>
-<h3 id="github前期准备"><a href="#github前期准备" class="headerlink" title="github前期准备"></a>github前期准备</h3><p>github 注册，注册之后创建以**.github.io**结尾的Repository。</p>
-<pre><code>1. 填 mysoftlight.github.io
-2. 选 Initialize this repository with a README
-3. 点 create
-</code></pre>
-<h3 id="装node-js"><a href="#装node-js" class="headerlink" title="装node.js"></a>装node.js</h3><pre><code>1. 选LTS版本  
-2. 安装 一直点击下一步
-3. 打开cmd 输 node -v  和 npm -v  若都显示版本号则成功
-</code></pre>
-<h3 id="装git"><a href="#装git" class="headerlink" title="装git"></a>装git</h3><pre><code>1.  官网下32/64位程序解压即可
-</code></pre>
-<h3 id="装hexo"><a href="#装hexo" class="headerlink" title="装hexo"></a>装hexo</h3><pre><code>1.  先创建一个名为blog的文件夹，然后 cd 切过去(或者直接在建好的文件夹下面右键选git bash打开)
-2.  输入 npm instsll -g hexo-cli 之后用 hexo -v 验证是否成功
-</code></pre>
-<h3 id="初始化-hexo"><a href="#初始化-hexo" class="headerlink" title="初始化 hexo"></a>初始化 hexo</h3><pre><code>1.  hexo init myblog 文件名自定义 ，如果在自己设的文件夹下可直接使用 hexo init
-2.  cd myblog 切入文件夹 如果在自己设的文件夹下可忽略
-3.  npm install 安装依赖包
-4.  hexo g 生成网页，展示的是自带网页
-5.  hexo s 将生成的页面放在本地服务器
-6.  浏览器输入 localhost:4000/ 就可以看到了
-7.  git bash里按Ctrl+C停止服务器
-</code></pre>
-<h3 id="Helloword-展示"><a href="#Helloword-展示" class="headerlink" title="Helloword 展示"></a>Helloword 展示</h3><pre><code>1.  在博客路径下输入 hexo new &quot;helloword&quot;
-2.  会在.\blog\source_posts路径下生成名为helloword.md的文件。可以随便写点什么然后保存关上。
-3.  在git Bash 输 hexo g 然后输 hexo s
-4.  刷新之前页面，会看到更新后的页面。
-</code></pre>
-<h3 id="远程部署-一"><a href="#远程部署-一" class="headerlink" title="远程部署(一)"></a>远程部署(一)</h3><pre><code>1.  密钥生成(Name和Email是github的用户名和邮箱) 
-- git config --global user.name &quot;Name&quot;
-- git config --global user.email &quot;Email&quot;
-- ssh-keygen -t rsa -C &quot;Email&quot;
-2.以上直接回车即可，保存默认位置密码空着就行。
-3.  复制密钥 
-- clip &lt; ~/.ssh/id_rsa.pub
-</code></pre>
-<h3 id="远程部署-二"><a href="#远程部署-二" class="headerlink" title="远程部署(二)"></a>远程部署(二)</h3><pre><code>1.  github 头像-&gt;Settings-&gt;SSH and GPG kesys -&gt; new SSH key
-2.  名字随意 ，密钥放刚刚粘贴板里的
-3.  测试连接
--  ssh -T git@github.com
-</code></pre>
-<h3 id="修改blog配置"><a href="#修改blog配置" class="headerlink" title="修改blog配置"></a>修改blog配置</h3><pre><code> deploy:
-    type: git
-    repo: git@github.com:mysoftlight/mysoftlight.github.io.git
-    branch: master
-</code></pre>
-<h3 id="写文章发布文章"><a href="#写文章发布文章" class="headerlink" title="写文章发布文章"></a>写文章发布文章</h3><pre><code>1.  博客根目录 安装扩展
-- npm i hexo-deployer-git
-2.  git Bash下输入(G 生成静态页面 s启动本地服务器 d推送到github)
-- hexo g
-- hexo d 
-3.  输入你的博客地址 https://你的用户名.github.io
-</code></pre>
+<h2 id="一般流程"><a href="#一般流程" class="headerlink" title="一般流程"></a>一般流程</h2><h3 id="github账号前期准备"><a href="#github账号前期准备" class="headerlink" title="github账号前期准备"></a>github账号前期准备</h3><p>github 注册，注册之后创建以**.github.io**结尾的Repository。</p>
+<ol>
+<li>填 mysoftlight.github.io</li>
+<li>选 Initialize this repository with a README</li>
+<li>点 create</li>
+</ol>
+<h3 id="安装-node-js"><a href="#安装-node-js" class="headerlink" title="安装 node.js"></a>安装 node.js</h3><ol>
+<li>选LTS版本  </li>
+<li>安装 一直点击下一步</li>
+<li>打开cmd 输 <code>node -v</code>  和 <code>npm -v</code>  若都显示版本号则成功</li>
+</ol>
+<h3 id="安装-git"><a href="#安装-git" class="headerlink" title="安装 git"></a>安装 git</h3><ol>
+<li>官网下32&#x2F;64位程序解压即可</li>
+</ol>
+<h3 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h3><ol>
+<li>先创建一个名为blog的文件夹，然后 cd 切过去(或者直接在建好的文件夹下面右键选git bash打开)</li>
+<li>输入 <code>npm instsll  hexo-cli -g</code> 之后用 <code>hexo -v</code> 验证是否成功</li>
+</ol>
+<h3 id="初始化-hexo"><a href="#初始化-hexo" class="headerlink" title="初始化 hexo"></a>初始化 hexo</h3><ol>
+<li><code>hexo init blog</code> 文件名自定义 ，如果在自己设的文件夹下可直接使用 hexo init</li>
+<li><code>cd blog</code>切入文件夹 如果在自己设的文件夹下可忽略</li>
+<li><code>npm install</code> 安装依赖包</li>
+<li><code>hexo g</code> 生成网页，展示的是自带网页</li>
+<li><code>hexo s</code> 将生成的页面放在本地服务器</li>
+<li>浏览器输入 <code>localhost:4000/</code> 就可以看到了</li>
+<li>git bash里按Ctrl+C停止服务器</li>
+</ol>
+<h3 id="Helloword-展示"><a href="#Helloword-展示" class="headerlink" title="Helloword 展示"></a>Helloword 展示</h3><ol>
+<li>在博客路径下输入 <code>hexo new &quot;helloword&quot;</code></li>
+<li>会在.\blog\source_posts路径下生成名为helloword.md的文件。可以随便写点什么然后保存关上。</li>
+<li>在git Bash 输 <code>hexo g</code> 然后输 <code>hexo s</code></li>
+<li>刷新之前页面，会看到更新后的页面。</li>
+</ol>
+<h3 id="远程部署-一-git-Bash-端"><a href="#远程部署-一-git-Bash-端" class="headerlink" title="远程部署(一) git Bash 端"></a>远程部署(一) git Bash 端</h3><ol>
+<li>密钥生成(Name和Email是github的用户名和邮箱)<br> <code>git config --global user.name &quot;Name&quot;</code><br> <code>git config --global user.email &quot;Email&quot;</code><br><code> ssh-keygen -t rsa -C &quot;Email&quot;</code></li>
+<li>以上直接回车即可，保存默认位置密码空着就行。</li>
+<li>复制密钥<br> <code>clip &lt; ~/.ssh/id_rsa.pub</code></li>
+</ol>
+<h3 id="远程部署-二-github-网页端"><a href="#远程部署-二-github-网页端" class="headerlink" title="远程部署(二) github 网页端"></a>远程部署(二) github 网页端</h3><ol>
+<li>github 头像-&gt;Settings-&gt;SSH and GPG kesys -&gt; new SSH key</li>
+<li>名字随意 ，密钥放刚刚粘贴板里的</li>
+<li>测试连接<br><code> ssh -T git@github.com</code></li>
+</ol>
+<h3 id="blog配置-blog-x2F-config-yml"><a href="#blog配置-blog-x2F-config-yml" class="headerlink" title="blog配置 blog&#x2F;_config.yml"></a>blog配置 blog&#x2F;_config.yml</h3><p>在 #Deployment 补全以下代码：</p>
+<p><code>deploy:</code><br>    <code> type: git</code><br>    <code>repo: git@github.com:mysoftlight/mysoftlight.github.io.git</code><br>   <code> branch: master</code></p>
+<h3 id="写文章发布文章"><a href="#写文章发布文章" class="headerlink" title="写文章发布文章"></a>写文章发布文章</h3><ol>
+<li>博客根目录 安装扩展<br> <code>npm i hexo-deployer-git</code></li>
+<li>git Bash下输入(G 生成静态页面 s启动本地服务器 d推送到github)<br><code> hexo g</code><br> <code>hexo d</code> </li>
+<li>浏览器输入你的博客地址 https:&#x2F;&#x2F;你的用户名.github.io</li>
+</ol>
+<h3 id="安装主题美化博客"><a href="#安装主题美化博客" class="headerlink" title="安装主题美化博客"></a>安装主题美化博客</h3><ol>
+<li><p>在<a href="https://hexo.io/themes/">hexo主题</a>找合适的主题</p>
+</li>
+<li><p>git Bash端输入<br> <code>cd blog</code><br> <code>git clone https://github.com/zhaoo/hexo-theme-zhaoo.git themes/zhaoo</code></p>
+</li>
+<li><p>在blog根目录中的_config.yml文件修改<br>   &#96;theme: zhaoo&#96;&#96;</p>
+</li>
+<li><p>git Bash中启动Hexo服务器预览<br>  &#96;hexo clean &amp;&amp; hexo s&#96;&#96;</p>
+</li>
+</ol>
+<h3 id="修改后的主题展示"><a href="#修改后的主题展示" class="headerlink" title="修改后的主题展示"></a>修改后的主题展示</h3><p> 点击以下链接可查看修改后的博客效果   </p>
 <ul>
-<li><a href="https://mysoftlight.github.io/">https://mysoftlight.github.io</a></li>
+<li><a href="https://mysoftlight.github.io/">无昧小站</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -87,6 +85,17 @@
         <tag>Hexo</tag>
         <tag>博客</tag>
         <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试文件</title>
+    <url>/2022/03/16/hello-world/</url>
+    <content><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h2 id="标题-1"><a href="#标题-1" class="headerlink" title="标题"></a>标题</h2><h3 id="标题-2"><a href="#标题-2" class="headerlink" title="标题"></a>标题</h3><h4 id="标题-3"><a href="#标题-3" class="headerlink" title="标题"></a>标题</h4><p>文字文字</p>
+<p><img  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fa4f5d5afe755bb6ca6071f264073b7e2ebee88d7.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1650035819&t=69c5b218ad05e6a24f6fa82b235ea060"  ><span class="image-caption">小红</span></p>
+]]></content>
+      <tags>
+        <tag>测试</tag>
+        <tag>test</tag>
       </tags>
   </entry>
 </search>
