@@ -6,9 +6,9 @@ https://mysoftlight.github.io/categories/index.html
 https://mysoftlight.github.io/galleries/%E8%AE%B0%E4%BA%8B/index.html
 https://mysoftlight.github.io/galleries/index.html
 https://mysoftlight.github.io/
+https://mysoftlight.github.io/tags/%E6%B5%8B%E8%AF%95/
+https://mysoftlight.github.io/tags/test/
 https://mysoftlight.github.io/tags/Hexo/
 https://mysoftlight.github.io/tags/%E5%8D%9A%E5%AE%A2/
 https://mysoftlight.github.io/tags/github/
-https://mysoftlight.github.io/tags/%E6%B5%8B%E8%AF%95/
-https://mysoftlight.github.io/tags/test/
 https://mysoftlight.github.io/categories/%E7%BD%91%E7%AB%99/
